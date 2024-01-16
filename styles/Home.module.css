@@ -147,7 +147,7 @@
   }
 
 
-  @media screen and (max-width: 830px){
+  /* @media screen and (max-width: 830px){
     .container{
       flex-direction: column-reverse;
     }
@@ -156,7 +156,7 @@
       align-items: center;
     }
 
-  }
+  } */
 
   /* about me */
 
@@ -226,7 +226,7 @@
     font-size: 25px;
   }
 
-  @media screen and (max-width: 830px){
+  /* @media screen and (max-width: 830px){
     .containera{
       background-color: transparent;
       padding-left: 0;
@@ -249,9 +249,7 @@
       padding-left: 0;
       padding-right: 0;
     }
-  }
-
-  /* contact */
+  } */
 
   /* skills */
 
@@ -293,93 +291,155 @@
   .skillIcon:hover {
     transform: scale(1.1); /* Increase size on hover */
   }
+
+  /* experience */
+
+
+  .timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+
+
+  .textbox{
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.30);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  .leftcontainer{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    left: 0;
+  }
+
+  .rightcontainer{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    right: -50%;
+  }
+
+
+  .leftcontainer img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    right: -20px;
+  }
+
+  .rightcontainer img{
+    left: -20px;
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    left: 54%;
+    top: 0;
+    width: 2px; 
+    height: 100%;
+    background-color: #fff;
+  }
+
+  /* projects */
+
+  .card-container{
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.5s;
+  }
+
+  .card-container:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+  }
+   
+  .image-container img{
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .card-content{
+    margin: 1rem;
+    margin-top:0.5rem;
+  }
+
+  /* h3,p{
+    margin: 0;
+    padding: 0;
+  } */
+
+  .card-title{
+    margin-bottom: 0.5rem;
+  }
+
+  /* contact */
+
+  .ccontainer {
+    color: var(--color-text);
+    margin-top: 120px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    padding: 58px 10%;
+    gap: 10px;
+  }
+  
+  .ctext h3 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  
+  .ctext p {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  
+  .clinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    gap: 26px;
+  }
+  
+  .clink {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .clink a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  
+  .clink img {
+    width: 40px;
+  }
   
 
-  
-
 }
-
-
-
- 
-
-
-.contact {
-  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-  padding: 20px;
-  align-items: center;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; /* Adjust this to your layout preference */
-  align-items: center; /* Adjust this to vertically center the content */
-  flex-direction: column; /* Change to column layout to stack items vertically */
-}
-
-.title {
-  color: #333;
-  margin-bottom: 20px; /* Add margin to separate title from the form */
-  align-items: center;
-}
-
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.global-input-textarea {
-  padding: 8px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-
-.button {
-  background-color: #4caf50;
-  color: white;
-  width: 100px; /* Adjust the width */
-  height: 30px; /* Adjust the height */
-  cursor: pointer;
-  align-self: center;
-}
-
-.button:hover {
-  background-color: #45a049;
-}
-
-.social-container {
-  display: flex;
-  margin-top: 20px;
-}
-
-.social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-.social-links li {
-  margin-right: 10px;
-}
-
-.social-links a {
-  text-decoration: none;
-}
-
-.social-link a:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.social-links img {
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  border-radius: 50%; /* Optional: Apply a border-radius for circular images */
-}
-
-
 

@@ -1,13 +1,28 @@
+import React from "react"
+import CardComponent from './CardComponent'
+
 const Projects=()=>{
     return(
         <>
-        <section>
-            <div>
-            <div>
-                <span>BiryaniHub - MCA Project [2023]</span>
-            </div>
-            <div>
-                <span>
+        <section id="projects">
+        <div>
+        <CardComponent
+          title="BiryaniHub - MCA Project [2023]"
+          description="Developed BiryaniHub, a web application, using React, Next.js, CSS, Sanity, and Stripe payment."
+          image="./project.jpg"
+          technologies={['React', 'CSS', 'Next.js']}
+        />
+      </div>
+          {/* <div>
+            <div className="card-container">
+                <div className="image-container">
+                    <img src="./project.jpg"/>
+                </div>
+                <div className="card-title">
+                    <h3>BiryaniHub - MCA Project [2023]</h3>
+                </div>
+                <div className="card-body">
+                    <p>
                 Developed BiryaniHub, a web application, using Javascript, Next.js, CSS, Sanity, and Stripe
 payment .
 Created a fully responsive and functional website .
@@ -17,11 +32,22 @@ Integrated Stripe payment for secure and seamless transactions.
 Demonstrated proﬁciency in web development technologies and creating user-friendly interfaces.
 Deployed to Vercel.
 Framework: React, CSS, NextJS.
-                </span>
+                    </p>
+                </div>
+                <div className="btn">
+                    <button>
+                        <a>React</a>
+                    </button>
+                    <button>
+                        <a>Nextjs</a>
+                    </button>
+                </div>
             </div>
-            </div>
+          </div> */}
+
+
             <hr />
-            <div>
+            {/* <div>
                 <div>
                     <span>
                     Literature Monitoring System - Internship Project [05/2023 - 08/2023]
@@ -47,7 +73,7 @@ SQLAlchemy and Alembic: SQLAlchemy facilitates database interactions, while Alem
 used for database migration and version control.
                     </span>
                 </div>
-            </div>
+            </div> */}
         </section>
 
         </>
